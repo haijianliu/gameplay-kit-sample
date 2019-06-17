@@ -14,20 +14,11 @@
 		60BAABD522B8592900CAC4BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BAABD422B8592900CAC4BD /* AppDelegate.swift */; };
 		60BAABD722B8592900CAC4BD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BAABD622B8592900CAC4BD /* GameViewController.swift */; };
 		60BAABDA22B8592900CAC4BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BAABD822B8592900CAC4BD /* Main.storyboard */; };
-		60BAABDC22B8592900CAC4BD /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 60BAABB822B8592800CAC4BD /* Shaders.metal */; };
-		60BAABDD22B8592900CAC4BD /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 60BAABB822B8592800CAC4BD /* Shaders.metal */; };
-		60BAABDE22B8592900CAC4BD /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BAABB922B8592800CAC4BD /* Renderer.swift */; };
-		60BAABDF22B8592900CAC4BD /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BAABB922B8592800CAC4BD /* Renderer.swift */; };
-		60BAABE022B8592900CAC4BD /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = 60BAABBA22B8592800CAC4BD /* ShaderTypes.h */; };
-		60BAABE122B8592900CAC4BD /* ShaderTypes.h in Resources */ = {isa = PBXBuildFile; fileRef = 60BAABBA22B8592800CAC4BD /* ShaderTypes.h */; };
 		60BAABE222B8592900CAC4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60BAABBB22B8592900CAC4BD /* Assets.xcassets */; };
 		60BAABE322B8592900CAC4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60BAABBB22B8592900CAC4BD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		60BAABB822B8592800CAC4BD /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
-		60BAABB922B8592800CAC4BD /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		60BAABBA22B8592800CAC4BD /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		60BAABBB22B8592900CAC4BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60BAABC022B8592900CAC4BD /* GameplayKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameplayKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BAABC322B8592900CAC4BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,9 +64,6 @@
 		60BAABB722B8592800CAC4BD /* GameplayKitSample Shared */ = {
 			isa = PBXGroup;
 			children = (
-				60BAABB822B8592800CAC4BD /* Shaders.metal */,
-				60BAABB922B8592800CAC4BD /* Renderer.swift */,
-				60BAABBA22B8592800CAC4BD /* ShaderTypes.h */,
 				60BAABBB22B8592900CAC4BD /* Assets.xcassets */,
 			);
 			path = "GameplayKitSample Shared";
@@ -192,7 +180,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60BAABE022B8592900CAC4BD /* ShaderTypes.h in Resources */,
 				60BAABC922B8592900CAC4BD /* Main.storyboard in Resources */,
 				60BAABE222B8592900CAC4BD /* Assets.xcassets in Resources */,
 				60BAABCC22B8592900CAC4BD /* LaunchScreen.storyboard in Resources */,
@@ -205,7 +192,6 @@
 			files = (
 				60BAABDA22B8592900CAC4BD /* Main.storyboard in Resources */,
 				60BAABE322B8592900CAC4BD /* Assets.xcassets in Resources */,
-				60BAABE122B8592900CAC4BD /* ShaderTypes.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60BAABDE22B8592900CAC4BD /* Renderer.swift in Sources */,
-				60BAABDC22B8592900CAC4BD /* Shaders.metal in Sources */,
 				60BAABC622B8592900CAC4BD /* GameViewController.swift in Sources */,
 				60BAABC422B8592900CAC4BD /* AppDelegate.swift in Sources */,
 			);
@@ -227,8 +211,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60BAABDF22B8592900CAC4BD /* Renderer.swift in Sources */,
-				60BAABDD22B8592900CAC4BD /* Shaders.metal in Sources */,
 				60BAABD722B8592900CAC4BD /* GameViewController.swift in Sources */,
 				60BAABD522B8592900CAC4BD /* AppDelegate.swift in Sources */,
 			);
@@ -389,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = haijian.GameplayKitSample;
 				PRODUCT_NAME = GameplayKitSample;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "GameplayKitSample Shared/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -411,7 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = haijian.GameplayKitSample;
 				PRODUCT_NAME = GameplayKitSample;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "GameplayKitSample Shared/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -435,7 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = haijian.GameplayKitSample;
 				PRODUCT_NAME = GameplayKitSample;
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "GameplayKitSample Shared/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -457,7 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = haijian.GameplayKitSample;
 				PRODUCT_NAME = GameplayKitSample;
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "GameplayKitSample Shared/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
