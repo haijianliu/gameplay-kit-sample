@@ -15,14 +15,12 @@ class GameViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		// Create the game and its SpriteKit scene.
-		let scene = SKScene()
-		scene.scaleMode = .aspectFit
+		// Create a game scene which is SpriteKit scene.
+		let scene = GameScene()
 		
 		// Present the scene and configure the SpriteKit view.
 		guard let skView = view as? SKView else { return }
 		skView.presentScene(scene)
-		
 		skView.ignoresSiblingOrder = true
 		skView.showsFPS = true
 		skView.showsNodeCount = true
