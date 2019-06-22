@@ -76,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				60BAABBB22B8592900CAC4BD /* Assets.xcassets */,
-				60A88AA122B998FE000651C3 /* SpriteComponent.swift */,
 				60A88AA722B99EA7000651C3 /* ControllerComponent.swift */,
+				60A88AA122B998FE000651C3 /* SpriteComponent.swift */,
 				60A88AA422B99AB8000651C3 /* GameScene.swift */,
 			);
 			path = "GameplayKitSample Shared";

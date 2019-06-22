@@ -22,7 +22,7 @@ class GameScene: SKScene, SKSceneDelegate {
 		
 		// Setup player entity with display and control components.
 		player = GKEntity()
-		player?.addComponent(GKSKNodeComponent())
+		player?.addComponent(SpriteComponent())
 		player?.addComponent(ControllerComponent())
 		
 		componentSystem.first?.addComponent(foundIn: player!)
